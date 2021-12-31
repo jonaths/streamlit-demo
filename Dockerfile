@@ -6,8 +6,6 @@ ENV PATH="$VIRTUAL_ENV/bin:$PATH"
 RUN apt-get update \
     && apt-get install g++ -y \
     && apt-get install gcc -y \
-    && apt-get install libopenblas-dev -y \
-    && apt-get install liblapack-dev -y \
     && apt-get install -y default-libmysqlclient-dev \
     && apt-get clean
 
